@@ -24,7 +24,7 @@ import whyMysteryBoxesImage from '../../assets/images/mystery-box-overview/why-m
     </hgroup>
 
     <div class="flex flex-col md:grid md:grid-cols-2 gap-8 items-center">
-      <Image src={curiousAboutImage} alt="" />
+      <Image src={curiousAboutImage} alt="" loading="eager" />
       <article
         class="flex flex-col gap-6"
         aria-labelledby="mystery-box-overview-section-title"
@@ -86,7 +86,7 @@ import whyMysteryBoxesImage from '../../assets/images/mystery-box-overview/why-m
           </p>
         </div>
       </article>
-      <Image src={whyMysteryBoxesImage} alt="" />
+      <Image src={whyMysteryBoxesImage} alt="" loading="lazy" />
     </div>
   </article>
 </section>
