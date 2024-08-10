@@ -34,7 +34,7 @@ const handleChangeActiveImage = (index: number) => {
       <div
         v-for="(image, index) in images.slice(0, 3)"
         :key="image.src"
-        class="overflow-hidden outline outline-1 rounded-[15px] outline-[#006340]"
+        class="overflow-hidden outline outline-1 rounded-[0.9375rem] outline-[#006340]"
       >
         <img
           class="scale-105 hover:scale-[1.15] transition-transform rounded-lg border w-[8.1875rem] h-[8.1875rem]"

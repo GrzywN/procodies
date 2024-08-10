@@ -16,7 +16,7 @@ export default {
         },
       },
       borderRadius: {
-        input: '10px',
+        input: '0.625rem',
       },
       fontFamily: {
         sans: ['Roboto', ...defaultTheme.fontFamily.sans],

@@ -1,12 +1,18 @@
 ---
 import Hero from '../components/hero/Hero.astro';
 import MysteryBoxOverview from '../components/mystery-box-overview/MysteryBoxOverview.astro';
+import Faq from '../components/faq/Faq.astro';
 import Layout from '../layouts/Layout.astro';
+import SupportedPaymentMethods from '../components/supported-payment-methods/SupportedPaymentMethods.astro';
 ---
 
 <Layout title="Procodies">
-  <main class="p-4 max-w-[1200px] mx-auto flex flex-col items-center gap-12">
+  <main class="p-4 max-w-[75rem] mx-auto flex flex-col items-center gap-12">
     <Hero />
     <MysteryBoxOverview />
   </main>
+  <footer class="pb-4 flex flex-col gap-4">
+    <Faq />
+    <SupportedPaymentMethods />
+  </footer>
 </Layout>

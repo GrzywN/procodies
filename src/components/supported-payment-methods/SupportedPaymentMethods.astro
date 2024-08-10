@@ -1,0 +1,13 @@
+---
+import { Image } from 'astro:assets';
+import supportedPaymentMethods from '/public/images/icons/supported-payment-methods.png';
+---
+
+<section aria-label="Supported payment methods">
+  <h2
+    class="mb-1 font-sans font-normal text-[0.75rem] leading-[1rem] text-[#293632] text-center"
+  >
+    We accept the following credit cards
+  </h2>
+  <Image class="mx-auto" src={supportedPaymentMethods} alt="Credit cards" />
+</section>
