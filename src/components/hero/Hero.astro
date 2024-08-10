@@ -1,6 +1,10 @@
 ---
+import { Image } from 'astro:assets';
 import HeroImageGallery from './HeroImageGallery.vue';
 import HeroImageOriginalValue from './HeroImageOriginalValue.astro';
+import mcAfeeSecureImage from '../../assets/images/icons/mcafee-secure.png';
+import trusteVerifiedImage from '../../assets/images/icons/truste-verified.png';
+import encryption256BitImage from '../../assets/images/icons/256-bit-encryption.png';
 ---
 
 <section
@@ -92,18 +96,14 @@ import HeroImageOriginalValue from './HeroImageOriginalValue.astro';
       >
 
       <div class="mx-auto h-10 flex flex-wrap gap-4">
-        <img
-          src="/images/icons/mcafee-secure.png"
-          alt="McAfee SECURE"
-          loading="eager"
-        />
-        <img
-          src="/images/icons/truste-verified.png"
+        <Image src={mcAfeeSecureImage} alt="McAfee SECURE" loading="eager" />
+        <Image
+          src={trusteVerifiedImage}
           alt="TRUSTe VERIFIED"
           loading="eager"
         />
-        <img
-          src="/images/icons/256-bit-encryption.png"
+        <Image
+          src={encryption256BitImage}
           alt="256 BIT ENCRYPTION"
           loading="eager"
         />

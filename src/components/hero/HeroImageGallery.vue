@@ -1,9 +1,9 @@
 <script setup lang="ts">
 import { ref } from 'vue';
-import featuredImage from '/public/images/hero/1.png';
-import alternative1 from '/public/images/hero/2.png';
-import alternative2 from '/public/images/hero/3.png';
-import alternative3 from '/public/images/hero/4.png';
+import featuredImage from '../../assets/images/hero/1.webp';
+import alternative1 from '../../assets/images/hero/2.webp';
+import alternative2 from '../../assets/images/hero/3.webp';
+import alternative3 from '../../assets/images/hero/4.webp';
 
 const images = ref([alternative1, alternative2, alternative3, featuredImage]);
 
@@ -21,6 +21,7 @@ const handleChangeActiveImage = (index: number) => {
 <template>
   <div class="flex flex-col gap-4">
     <div class="overflow-hidden">
+      <!-- PERF: It's possible to optimize it using Image component from Astro, but it requires extracting it to a different component -->
       <img
         class="hover:scale-105 transition-transform"
         :src="images[3].src"
@@ -38,6 +39,7 @@ const handleChangeActiveImage = (index: number) => {
         :key="image.src"
         class="aspect-square overflow-hidden outline outline-1 rounded-[0.9375rem] outline-[#006340]"
       >
+        <!-- PERF: It's possible to optimize it using Image component from Astro, but it requires extracting it to a different component -->
         <img
           class="scale-105 hover:scale-[1.15] transition-transform rounded-lg border"
           :src="image.src"
