@@ -6,5 +6,6 @@ import { defineConfig } from 'astro/config';
 
 // https://astro.build/config
 export default defineConfig({
-  integrations: [tailwind(), pageInsight(), sitemap(), vue()],
+  site: process.env.URL || 'http://localhost:4321',
+  integrations: [vue(), tailwind(), pageInsight(), sitemap()],
 });
