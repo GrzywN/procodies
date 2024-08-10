@@ -30,14 +30,16 @@ const handleChangeActiveImage = (index: number) => {
         loading="eager"
       />
     </div>
-    <div class="max-w-[30.375rem] h-auto flex flex-wrap gap-10 justify-between">
+    <div
+      class="max-w-[30.375rem] grid grid-cols-3 gap-4 md:gap-10 md:justify-between"
+    >
       <div
         v-for="(image, index) in images.slice(0, 3)"
         :key="image.src"
-        class="overflow-hidden outline outline-1 rounded-[0.9375rem] outline-[#006340]"
+        class="aspect-square overflow-hidden outline outline-1 rounded-[0.9375rem] outline-[#006340]"
       >
         <img
-          class="scale-105 hover:scale-[1.15] transition-transform rounded-lg border w-[8.1875rem] h-[8.1875rem]"
+          class="scale-105 hover:scale-[1.15] transition-transform rounded-lg border"
           :src="image.src"
           alt=""
           :width="image.width"
