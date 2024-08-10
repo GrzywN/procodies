@@ -1,0 +1,92 @@
+---
+import { Image } from 'astro:assets';
+import curiousAboutImage from '/public/images/mystery-box-overview/curious-about.png';
+import whyMysteryBoxesImage from '/public/images/mystery-box-overview/why-mystery-boxes.png';
+---
+
+<section
+  class="flex flex-col md:flex-row gap-4 items-center"
+  aria-labelledby="mystery-box-overview-title"
+>
+  <article class="flex flex-col gap-8">
+    <hgroup class="mx-auto text-center max-w-[49.375rem] w-full">
+      <h2
+        class="mb-2 font-sans font-bold text-[3rem] leading-[3.25rem] text-[#2D473E] text-balance"
+        id="mystery-box-overview-title"
+      >
+        Top Tech Mystery Box at Unbeatable Prices
+      </h2>
+      <h3
+        class="font-sans font-medium text-[1.25rem] leading-[1.465rem] text-[#006340]"
+      >
+        Fast shipping | Easy returns | Special discounts for students
+      </h3>
+    </hgroup>
+
+    <div class="flex flex-col md:flex-row gap-8 items-center">
+      <Image src={curiousAboutImage} alt="" />
+      <article
+        class="flex flex-col gap-6"
+        aria-labelledby="mystery-box-overview-section-title"
+      >
+        <h4
+          class="font-sans font-bold text-[2.625rem] leading-[3.25rem] text-[#2D473E]"
+          id="mystery-box-overview-section-title"
+        >
+          Curious about the <strong class="text-[#006340]">StockX</strong> Mystery
+          Box?
+        </h4>
+
+        <div class="flex flex-col gap-2">
+          <p
+            class="font-sans font-normal text-[1rem] leading-[1.5rem] text-[#293632]"
+          >
+            Experience the thrill of unboxing cutting-edge gadgets with Stockx
+            Mystery Boxes. Each box is a treasure trove of high-quality
+            electronics, handpicked to elevate your tech game.
+          </p>
+          <p
+            class="font-sans font-normal text-[1rem] leading-[1.5rem] text-[#293632]"
+          >
+            Expect the unexpected! Our boxes are packed with the latest gadgets,
+            from smartphones to gaming consoles, ensuring you get the best tech
+            surprises every time.
+          </p>
+        </div>
+      </article>
+    </div>
+
+    <div class="mt-4 flex flex-col md:flex-row-reverse gap-8 items-center">
+      <Image src={whyMysteryBoxesImage} alt="" />
+      <article
+        class="flex flex-col gap-6"
+        aria-labelledby="mystery-box-overview-section-title"
+      >
+        <h4
+          class="font-sans font-bold text-[2.625rem] leading-[3.25rem] text-[#2D473E]"
+          id="mystery-box-overview-section-title"
+        >
+          Why is everyone buzzing about these boxes?
+        </h4>
+
+        <div class="flex flex-col gap-2">
+          <p
+            class="font-sans font-normal text-[1rem] leading-[1.5rem] text-[#293632]"
+          >
+            StockX Mystery Boxes are not just about products; they’re about the
+            experience. Imagine the excitement of unveiling top-tier electronics
+            at a fraction of the cost.
+          </p>
+          <p
+            class="font-sans font-normal text-[1rem] leading-[1.5rem] text-[#293632]"
+          >
+            Our boxes include a variety of premium tech items, making it a
+            must-have for every tech enthusiast. Join the buzz and see why
+            everyone is raving about the unbeatable value and surprise factor of
+            Stockx Mystery Boxes!
+          </p>
+        </div>
+      </article>
+    </div>
+  </article>
+</section>

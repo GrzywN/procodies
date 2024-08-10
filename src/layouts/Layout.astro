@@ -28,6 +28,11 @@ const { title } = Astro.props;
     scroll-behavior: smooth;
   }
 
+  .debug,
+  .debug * {
+    outline: 1px dashed magenta;
+  }
+
   .my-input {
     @apply px-4 py-3 border border-secondary-200 focus-visible:border-primary-500 outline-none text-primary-500 focus-visible:placeholder:text-primary-500 rounded-[10px] transition-colors;
   }
